@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<DAL2.Models.Customer>
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -9,6 +10,25 @@
 </div>
 
 <div class="row">
+    <table class="table table-striped thead-dark">
+        <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var customer in Model) {
+            <tr>
+                <td>@customer.CustomerID</td>
+                <td>@customer.Name</td>
+            </tr>
+        }
+
+        </tbody>
+    </table>
+</div>
+@*<div class="row">
     <div class="col-md-4">
         <h2>Getting started</h2>
         <p>
@@ -28,4 +48,4 @@
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
-</div>
+</div>*@
