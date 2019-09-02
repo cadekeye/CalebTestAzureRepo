@@ -25,14 +25,13 @@ namespace DAL2.Repositories
 
         public IEnumerable<T> GetAll() {
             return restaurantDbContext.Set<T>().ToList();
-            //return restaurantDbContext.Database.SqlQuery<T>("SELECT * from orders").ToList();
         }
 
         public async Task<T> GetAllById(int id) {
             return await restaurantDbContext.Set<T>().FindAsync();
         }
 
-        public IQueryable<T> GetNextEntities(string sql, object[] param) {
+        public IQueryable<T> GetNextEntities(string sql, params object[] param) {
             return restaurantDbContext.Database.SqlQuery<T>(sql, param).AsQueryable();
         }
     }

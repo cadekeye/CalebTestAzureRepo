@@ -18,7 +18,7 @@ namespace DAL2.Repositories
             var query = from a in this.restaurantDbContext.Customers
                 orderby a.CustomerID
                 select a;
-
+            //restaurantDbContext.Database.ExecuteSqlCommand()
            return query.Skip(skip).Take(take);
         }
     }
