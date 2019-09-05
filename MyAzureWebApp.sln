@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL2", "DAL2\DAL2.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebForm", "MyWebForm\MyWebForm.csproj", "{1D71D698-0492-40BB-93FE-12F51516F802}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL2Test", "DAL2Test\DAL2Test.csproj", "{B5901B43-C18C-4F20-9844-557F9563F537}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{1D71D698-0492-40BB-93FE-12F51516F802}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D71D698-0492-40BB-93FE-12F51516F802}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D71D698-0492-40BB-93FE-12F51516F802}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5901B43-C18C-4F20-9844-557F9563F537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5901B43-C18C-4F20-9844-557F9563F537}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5901B43-C18C-4F20-9844-557F9563F537}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5901B43-C18C-4F20-9844-557F9563F537}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
