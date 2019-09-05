@@ -55,6 +55,11 @@
         <asp:DropDownList runat="server" id="ddlGender"/>
     </div>
     <div class="form-group">
+        <label>Comment</label>
+        <asp:TextBox Rows="5" runat="server" id="txtComment"></asp:TextBox>
+    </div>
+
+    <div class="form-group">
         <asp:Button ID="btnLoad" Text="Load Grid" runat="server" OnClick="btnLoad_OnClick"/>
     </div>
 
