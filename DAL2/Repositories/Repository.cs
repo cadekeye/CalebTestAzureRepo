@@ -85,6 +85,7 @@ namespace DAL2.Repositories
 
         public IEnumerable<T> GetAll() {
             return restaurantDbContext.Set<T>().ToList();
+
         }
 
         public async Task<T> GetAllById(int id) {
