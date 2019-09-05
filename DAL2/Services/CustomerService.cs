@@ -25,5 +25,9 @@ namespace DAL2.Services
         public IEnumerable<Customer> GetCustomers() {
             return this.unitOfWork.CustomerRepository.GetAll();
         }
+
+        public IEnumerable<Customer> GetCustomerBySqlCommand(string sql) {
+            return this.unitOfWork.CustomerRepository.GetEntityBySqlCommand(sql, null);
+        }
     }
 }

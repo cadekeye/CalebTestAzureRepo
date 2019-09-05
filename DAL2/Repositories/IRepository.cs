@@ -12,5 +12,6 @@ namespace DAL2.Repositories
         IEnumerable<T> GetAll();
         Task<T> GetAllById(int id);
         IQueryable<T> GetNextEntities(string sql, object[] param);
+        IEnumerable<T> GetEntityBySqlCommand(string sql, params object[] param);
     }
 }

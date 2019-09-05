@@ -17,7 +17,7 @@ namespace MyAzureWebApp.Controllers
 
           //var nextCustomers = customerService.GetNextCustomers(1, 1).ToList();
 
-          var allCustomers = customerService.GetCustomers();
+          var allCustomers = customerService.GetCustomerBySqlCommand("select * from customers"); //customerService.GetCustomers();
 
             return View(allCustomers);
         }
