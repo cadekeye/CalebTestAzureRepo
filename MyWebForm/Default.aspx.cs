@@ -19,6 +19,7 @@ namespace MyWebForm
             };
 
             ddlGender.DataSource = genders;
+
             ddlGender.DataTextField = "Value";
             ddlGender.DataValueField = "Key";
             ddlGender.DataBind();
