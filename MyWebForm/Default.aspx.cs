@@ -12,6 +12,17 @@ namespace MyWebForm
         private CustomerService customerService = null;
         protected void Page_Load(object sender, EventArgs e) {
             this.customerService = new CustomerService();
+
+            var genders = new Dictionary<int, string>() {
+                { 1, "Male" },
+                { 2, "Female" },
+            };
+
+            ddlGender.DataSource = genders;
+            ddlGender.DataTextField = "Value";
+            ddlGender.DataValueField = "Key";
+            ddlGender.DataBind();
+
         }
 
         protected void btnLoad_OnClick(object sender, EventArgs e) {

@@ -47,6 +47,14 @@
         <asp:TextBox id="txtLast" runat="server"></asp:TextBox>
     </div>
     <div class="form-group">
+        <label>Age</label>
+        <asp:TextBox ID="txtAge" runat="server"></asp:TextBox>
+    </div>
+    <div class="form-group">
+        <label>Gender</label>
+        <asp:DropDownList runat="server" id="ddlGender"/>
+    </div>
+    <div class="form-group">
         <asp:Button ID="btnLoad" Text="Load Grid" runat="server" OnClick="btnLoad_OnClick"/>
     </div>
 
