@@ -15,7 +15,7 @@ namespace MyWebForm
 
             var genders = new Dictionary<int, string>() {
                 { 1, "Male" },
-                { 2, "Female" },
+                { 2, "Female" }
             };
 
             ddlGender.DataSource = genders;
